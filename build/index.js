@@ -2,11 +2,12 @@ let currSlide = 0;
 let visibleSlide = 1;
 
 var container = document.getElementById('slider');
-container.classList.add('mt-5')
+container.classList.add('mt-5','ontainer-img');
     container.innerHTML = '';
      const ImgArray = [
         'img/fit.jpg',
-        'img/fit1.jpg'
+        'img/fit1.jpg',
+        'img/fit3.jpg'
     ];  
 
 

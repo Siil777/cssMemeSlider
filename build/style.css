@@ -1,6 +1,15 @@
+:root {
+    --AntiqueWhite: #FAEBD7;
+}
+
 .arrows {
     cursor: pointer;
     z-index: 1111;
+    width: 40px;
+    height: 40px;
+}
+.arrows:hover {
+    transform: scale(0.9);
 }
 
 #slider {
@@ -22,4 +31,24 @@
     justify-content: center;
     margin: auto;
 }
-
+.picture {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+.picture::before {
+    position:absolute;
+    content: "";
+    margin: auto;
+    top: 25px;
+    height: 100%;
+    width: 60%;
+    background-image: url('img/fitnes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    border-radius: 30px;
+    
+}
