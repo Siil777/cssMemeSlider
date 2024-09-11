@@ -4,8 +4,8 @@
 }
 
 #slider {
-    width: 100%;
-    height: 600px;
+    width: 57.5vw;
+    height: 57.5vh;
     position: relative; 
     overflow: hidden;  
 }
@@ -14,7 +14,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;  
+    object-fit: contain;  
 }
 .wrapper {
     max-width: 1200px;

@@ -2,6 +2,7 @@ let currSlide = 0;
 let visibleSlide = 1;
 
 var container = document.getElementById('slider');
+container.classList.add('mt-5')
     container.innerHTML = '';
      const ImgArray = [
         'img/fit.jpg',
@@ -12,6 +13,8 @@ var container = document.getElementById('slider');
 function slider(arrayOfSlides){
     container.innerHTML = '';
     for(let x=0; x < arrayOfSlides.length; x++){
+        const div = document.createElement('div');
+        div.classList.add('col');
         const Image = document.createElement('img');
         Image.src = arrayOfSlides[x];
         Image.style.position = 'absolute';
@@ -20,7 +23,8 @@ function slider(arrayOfSlides){
         Image.style.opacity = '0';
         //Image.style.visibility = 'hidden';
         Image.classList.add('img-fluid');
-        container.appendChild(Image);
+        div.appendChild(Image);
+        container.appendChild(div);
     }
     updateVisibility();
 }
