@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/the-black');
 :root {
     --AntiqueWhite: #FAEBD7;
 }
@@ -51,4 +52,15 @@
     opacity: 0.5;
     border-radius: 30px;
     
+}
+
+/**/
+.custom-span {
+    font-family: 'The Black', sans-serif;
+    font-size: 100px;
+    z-index: -1;
+    position:absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-20deg);
 }
