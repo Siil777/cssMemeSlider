@@ -1,66 +1,62 @@
-@import url('https://fonts.cdnfonts.com/css/the-black');
-:root {
-    --AntiqueWhite: #FAEBD7;
-}
+@import url('https://fonts.cdnfonts.com/css/the-black'); 
 
-.arrows {
+.arrow {
     cursor: pointer;
-    z-index: 1111;
-    width: 40px;
-    height: 40px;
 }
-.arrows:hover {
+.arrow:active {
     transform: scale(0.9);
 }
-
 #slider {
-    width: 57.5vw;
-    height: 57.5vh;
-    position: relative; 
-    overflow: hidden;  
-}
-
-#slider img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  
-}
-.wrapper {
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-.picture {
+    width: 47.7vw;
+    height: 57.7vh;
     position: relative;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    align-items: center;
+    overflow-x: hidden;
+    top: 90px;
+    z-index: 111;
+    overflow-y: hidden;
 }
-.picture::before {
+#slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    position: relative;
+    border-radius: 10px;
+}
+/*to add a bit css styles*/
+body {
+    position: relative;
+}
+body::before {
     position:absolute;
     content: "";
-    margin: auto;
-    top: 25px;
     height: 100%;
-    width: 60%;
+    width: 100%;
     background-image: url('img/fitnes.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
-    border-radius: 30px;
-    
-}
-
-/**/
-.custom-span {
-    font-family: 'The Black', sans-serif;
-    font-size: 100px;
+    background-size: cover;
+    opacity: 0.3;
     z-index: -1;
-    position:absolute;
-    left: 0;
-    top: 0;
-    transform: rotate(-20deg);
+    border-radius: 50px;
+}
+.inscription {
+    font-family: 'The Black', 'Sans-serif';
+    font-size: 60px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    transform: rotate(30deg);
+}
+.custom-li {
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+.green {
+    background-color: #7FFF00;
 }
